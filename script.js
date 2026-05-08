@@ -22,14 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contact-form');
 
     contactForm.addEventListener('submit', function(evento) {
-        // Prevenir que la página se recargue (comportamiento por defecto)
         evento.preventDefault();
         
-        // Acá se podría agregar código para enviar los datos por fetch/AJAX
-        // Por ahora, solo mostramos una alerta para cumplir el requisito
         alert('¡Gracias por tu mensaje! El formulario fue procesado con JavaScript.');
         
-        // Limpiar el formulario
         contactForm.reset();
     });
 
