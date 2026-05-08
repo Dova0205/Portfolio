@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Mi Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#info">Sobre Mí</a></li>
+            <li><a href="#conocimientos">Conocimientos</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <img src="assets/perfil.jpg" alt="Mi foto de perfil" class="profile-img">
+            <h1>¡Hola! Soy [Tu Nombre]</h1>
+            <p>Desarrollador y Estudiante de Programación</p>
+            <a href="#contacto" class="btn">Contactame</a>
+        </div>
+    </header>
+
+    <section id="info" class="section">
+        <h2>Información General</h2>
+        <div class="section-content text-center">
+            <p>Soy un estudiante apasionado por la tecnología y la resolución de problemas. Actualmente me encuentro desarrollando mis habilidades en análisis de sistemas y programación web. Me gusta crear soluciones eficientes, limpias y funcionales.</p>
+        </div>
+    </section>
+
+    <section id="conocimientos" class="section bg-light">
+        <h2>Conocimientos</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">Diseño Web Responsive</div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="section">
+        <h2>Mis Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Proyecto 1</h3>
+                <p>Breve descripción de este proyecto. Qué hace y qué tecnologías se utilizaron.</p>
+                <a href="#" class="btn-small">Ver código</a>
+            </div>
+            <div class="project-card">
+                <h3>Proyecto 2</h3>
+                <p>Breve descripción de este proyecto. Qué hace y qué tecnologías se utilizaron.</p>
+                <a href="#" class="btn-small">Ver código</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section bg-light">
+        <h2>Contacto</h2>
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://github.com/tu-usuario" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/tu-usuario" target="_blank">LinkedIn</a>
+            <a href="mailto:tuemail@ejemplo.com">Email</a>
+        </div>
+        <p>&copy; 2026 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
